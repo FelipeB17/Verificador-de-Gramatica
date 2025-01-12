@@ -1,0 +1,40 @@
+Omar Alexis Palencia Claro 1152270
+Andrés Felipe Beltran Assaf 1152262
+
+
+Verificador de gramatica
+
+-------Como se hizo
+El programa se desarrollo en su totalidad en el lenguaje Java, por medio de la IDE Apache Netbeans, basado en un concepto de parseo denominado "shift reduce parsing", que recorre de izquierda a derecha el input.
+-------Origen
+El programa y su ejecucion se baso principalmente en el concepto del analizador sintactico "shift-reduce", un algoritmo sencillo pero eficiente para analizar la pertenencia de una palabra a una gramatica desde abajo hasta arriba (bottom-up parsing) https://www.geeksforgeeks.org/shift-reduce-parser-compiler/amp/.
+
+-------Estructuras de datos
+Para la clase de Gramatica (que depura la entrada de reglas y simbolos) se usaron arrayList y hashmap.
+Para la clase de Parser se uso hashmap para almacenar las reglas de produccion.
+
+-------Pasos para ejecutar
+
+Antes de ejecutar: Instale el JDK 21 para correr los ejecutables https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe
+
+Paso 1. En la primera ventana de texto ingresar tres partes de la gramatica, terminales, no terminales, y el simbolo inicial, separados por coma y, agrupados, separados en parentesis.
+
+De la siguiente forma: Gramatica. G = (Terminales), (No-terminales), (Inicial)
+
+
+
+
+Paso 2. En la segunda ventana de texto ingresar las reglas de produccion, que iran de la siguiente forma:
+Pn = Formacion,Formacion;
+
+Cada elemento al lado derecho se separa por comas, cada produccion se separa por punto y coma
+
+Restricciones:
+-La produccion no puede contenerse como formacion a si misma, por si sola.
+-Dos o mas producciones no pueden compartir una formacion en el lado derecho (RHS)
+
+
+
+Paso 3. Dele click al boton de "Revisar Gramatica", ANTES de verificar la palabra
+
+Paso 4. Ingrese la palabra y dele click al boton de "Revisar palabra". Saltará una ventana que indica si la palabra pertenece o no pertenece a la gramatica propuesta.
